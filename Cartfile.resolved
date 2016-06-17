@@ -1,3 +1,3 @@
-github "the-grid/AsyncDisplayKit" "bde4fe7e246fb262f2709f46556e236c6d6f462c"
+github "facebook/AsyncDisplayKit" "bde4fe7e246fb262f2709f46556e236c6d6f462c"
 github "pinterest/PINCache" "2.2.2"
 github "pinterest/PINRemoteImage" "3.0.0-beta.2"
