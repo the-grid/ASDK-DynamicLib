@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+xcodebuild -workspace "ASDK-DynamicLib.xcworkspace" -scheme "ASDK-DynamicLib" -sdk iphonesimulator -destination "platform=iOS Simulator,name=iPhone 6s,OS=9.3" clean build

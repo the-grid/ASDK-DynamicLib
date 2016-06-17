@@ -1,0 +1,9 @@
+language: objective-c
+osx_image: xcode7.3
+git:
+  submodules: false
+before_install:
+- rvm get head
+- set -eo pipefail
+install: script/bootstrap
+script: script/build | egrep "^(/.+:[0-9+:[0-9]+:.(error|warning):|fatal|===)"
