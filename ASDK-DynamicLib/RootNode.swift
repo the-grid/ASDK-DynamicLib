@@ -17,7 +17,6 @@ class RootNode: ASDisplayNode, ASNetworkImageNodeDelegate {
         backgroundNode = ASDisplayNode()
         imageNode = ASNetworkImageNode()
         imageNode.contentMode = .ScaleAspectFit
-        imageNode.needsDisplayOnBoundsChange = false
         imageNode.layerBacked = true
         
         super.init()
@@ -30,7 +29,6 @@ class RootNode: ASDisplayNode, ASNetworkImageNodeDelegate {
     }
     
     override func layoutSpecThatFits(constrainedSize: ASSizeRange) -> ASLayoutSpec {
-        print("layoutSpecThatFits: \(constrainedSize)")
         let bgSpec = ASBackgroundLayoutSpec(child: backgroundNode, background: imageNode)
         backgroundNode.preferredFrameSize = constrainedSize.max
         return bgSpec
