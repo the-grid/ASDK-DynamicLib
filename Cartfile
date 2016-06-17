@@ -1,0 +1,3 @@
+github "the-grid/AsyncDisplayKit" "master"
+github "pinterest/PINCache" ~> 2.2
+github "pinterest/PINRemoteImage" ~> 3.0

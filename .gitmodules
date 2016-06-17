@@ -1,0 +1,9 @@
+[submodule "Carthage/Checkouts/AsyncDisplayKit"]
+	path = Carthage/Checkouts/AsyncDisplayKit
+	url = ssh://git@github.com/the-grid/AsyncDisplayKit.git
+[submodule "Carthage/Checkouts/PINCache"]
+	path = Carthage/Checkouts/PINCache
+	url = ssh://git@github.com/pinterest/PINCache.git
+[submodule "Carthage/Checkouts/PINRemoteImage"]
+	path = Carthage/Checkouts/PINRemoteImage
+	url = ssh://git@github.com/pinterest/PINRemoteImage.git
