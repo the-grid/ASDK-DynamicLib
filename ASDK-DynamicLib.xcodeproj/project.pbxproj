@@ -18,6 +18,7 @@
 		76AFA20C1D14AA4F0044C4B9 /* PINCache.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76AFA2051D14AA3E0044C4B9 /* PINCache.framework */; };
 		76AFA20D1D14AA4F0044C4B9 /* PINCache.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 76AFA2051D14AA3E0044C4B9 /* PINCache.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		76AFA20F1D14AA4F0044C4B9 /* PINRemoteImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 76AFA2061D14AA3E0044C4B9 /* PINRemoteImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		76F747BA1D14B489001F55F9 /* RootNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F747B91D14B489001F55F9 /* RootNode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -45,9 +46,10 @@
 		76AFA1FA1D149B990044C4B9 /* Default-667h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-667h@2x.png"; sourceTree = "<group>"; };
 		76AFA1FB1D149B990044C4B9 /* Default-736h@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-736h@3x.png"; sourceTree = "<group>"; };
 		76AFA2001D149C020044C4B9 /* ASDK-DynamicLib-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ASDK-DynamicLib-Bridging-Header.h"; sourceTree = "<group>"; };
-		76AFA2041D14AA3E0044C4B9 /* AsyncDisplayKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AsyncDisplayKit.framework; path = AsyncDisplayKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		76AFA2051D14AA3E0044C4B9 /* PINCache.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PINCache.framework; path = PINCache.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		76AFA2061D14AA3E0044C4B9 /* PINRemoteImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PINRemoteImage.framework; path = PINRemoteImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		76AFA2041D14AA3E0044C4B9 /* AsyncDisplayKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AsyncDisplayKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		76AFA2051D14AA3E0044C4B9 /* PINCache.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PINCache.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		76AFA2061D14AA3E0044C4B9 /* PINRemoteImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PINRemoteImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		76F747B91D14B489001F55F9 /* RootNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootNode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 			children = (
 				76AFA1E61D149AC50044C4B9 /* AppDelegate.swift */,
 				76AFA1E81D149AC50044C4B9 /* ViewController.swift */,
+				76F747B81D14B468001F55F9 /* nodes */,
 				76AFA1F81D149B5E0044C4B9 /* Supporting Files */,
 			);
 			path = "ASDK-DynamicLib";
@@ -111,6 +114,14 @@
 				76AFA2061D14AA3E0044C4B9 /* PINRemoteImage.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		76F747B81D14B468001F55F9 /* nodes */ = {
+			isa = PBXGroup;
+			children = (
+				76F747B91D14B489001F55F9 /* RootNode.swift */,
+			);
+			name = nodes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -186,6 +197,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				76AFA1E91D149AC50044C4B9 /* ViewController.swift in Sources */,
+				76F747BA1D14B489001F55F9 /* RootNode.swift in Sources */,
 				76AFA1E71D149AC50044C4B9 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,9 +294,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "ASDK-DynamicLib/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.thegrid.ASDK-DynamicLib";
@@ -298,9 +308,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "ASDK-DynamicLib/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.thegrid.ASDK-DynamicLib";
@@ -328,6 +336,7 @@
 				76AFA1F71D149AC50044C4B9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

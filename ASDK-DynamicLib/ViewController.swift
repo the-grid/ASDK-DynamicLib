@@ -8,11 +8,20 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class ViewController: ASViewController {
+    
+    let rootNode = RootNode()
+    
+    init() {
+        super.init(node: rootNode)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
 
     override func didReceiveMemoryWarning() {
