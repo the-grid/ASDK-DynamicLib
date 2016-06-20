@@ -3,51 +3,9 @@
    LastUpgradeVersion = "0730"
    version = "1.3">
    <BuildAction
-      parallelizeBuildables = "NO"
-      buildImplicitDependencies = "NO">
+      parallelizeBuildables = "YES"
+      buildImplicitDependencies = "YES">
       <BuildActionEntries>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6629FFEC1A66B512009C10BD"
-               BuildableName = "PINCache.framework"
-               BlueprintName = "iOS"
-               ReferencedContainer = "container:Carthage/Checkouts/PINCache/tests/PINCache.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F1B918D01BCF239200710963"
-               BuildableName = "PINRemoteImage.framework"
-               BlueprintName = "PINRemoteImage-iOS"
-               ReferencedContainer = "container:Carthage/Checkouts/PINRemoteImage/PINRemoteImage/PINRemoteImage.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B35061D91B010EDF0018CF92"
-               BuildableName = "AsyncDisplayKit.framework"
-               BlueprintName = "AsyncDisplayKit-iOS"
-               ReferencedContainer = "container:Carthage/Checkouts/AsyncDisplayKit/AsyncDisplayKit.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
          <BuildActionEntry
             buildForTesting = "YES"
             buildForRunning = "YES"

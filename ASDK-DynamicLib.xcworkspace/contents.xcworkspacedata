@@ -4,13 +4,4 @@
    <FileRef
       location = "container:ASDK-DynamicLib.xcodeproj">
    </FileRef>
-   <FileRef
-      location = "group:Carthage/Checkouts/AsyncDisplayKit/AsyncDisplayKit.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:Carthage/Checkouts/PINCache/tests/PINCache.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:Carthage/Checkouts/PINRemoteImage/PINRemoteImage/PINRemoteImage.xcodeproj">
-   </FileRef>
 </Workspace>
