@@ -1,3 +1,2 @@
 github "facebook/AsyncDisplayKit"
-github "pinterest/PINCache" ~> 2.2
-github "pinterest/PINRemoteImage" ~> 3.0
+github "the-grid/PINRemoteImage" "ea031bd00e609e4a7f29af53868da0f190bccb49"

@@ -6,4 +6,4 @@
 	url = https://github.com/pinterest/PINCache.git
 [submodule "Carthage/Checkouts/PINRemoteImage"]
 	path = Carthage/Checkouts/PINRemoteImage
-	url = https://github.com/pinterest/PINRemoteImage.git
+	url = https://github.com/the-grid/PINRemoteImage.git
