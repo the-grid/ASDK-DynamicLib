@@ -1,9 +1,0 @@
-[submodule "Carthage/Checkouts/AsyncDisplayKit"]
-	path = Carthage/Checkouts/AsyncDisplayKit
-	url = https://github.com/facebook/AsyncDisplayKit.git
-[submodule "Carthage/Checkouts/PINCache"]
-	path = Carthage/Checkouts/PINCache
-	url = https://github.com/pinterest/PINCache.git
-[submodule "Carthage/Checkouts/PINRemoteImage"]
-	path = Carthage/Checkouts/PINRemoteImage
-	url = https://github.com/pinterest/PINRemoteImage.git

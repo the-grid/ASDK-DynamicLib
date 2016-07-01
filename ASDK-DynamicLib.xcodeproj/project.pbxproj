@@ -129,13 +129,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 76AFA1F51D149AC50044C4B9 /* Build configuration list for PBXNativeTarget "ASDK-DynamicLib" */;
 			buildPhases = (
-				26A5645D6766C39D94BBCFB2 /* 📦 Check Pods Manifest.lock */,
+				26A5645D6766C39D94BBCFB2 /* [CP] Check Pods Manifest.lock */,
 				76AFA1DF1D149AC50044C4B9 /* Sources */,
 				76AFA1E01D149AC50044C4B9 /* Frameworks */,
 				76AFA1E11D149AC50044C4B9 /* Resources */,
 				76AFA2101D14AA4F0044C4B9 /* Embed Frameworks */,
-				CA23F443EEDCFBE66C244EA0 /* 📦 Embed Pods Frameworks */,
-				F9C67DAE221140D1D9FCE672 /* 📦 Copy Pods Resources */,
+				CA23F443EEDCFBE66C244EA0 /* [CP] Embed Pods Frameworks */,
+				F9C67DAE221140D1D9FCE672 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -193,14 +193,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		26A5645D6766C39D94BBCFB2 /* 📦 Check Pods Manifest.lock */ = {
+		26A5645D6766C39D94BBCFB2 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -208,14 +208,14 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		CA23F443EEDCFBE66C244EA0 /* 📦 Embed Pods Frameworks */ = {
+		CA23F443EEDCFBE66C244EA0 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -223,14 +223,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ASDK-DynamicLib/Pods-ASDK-DynamicLib-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F9C67DAE221140D1D9FCE672 /* 📦 Copy Pods Resources */ = {
+		F9C67DAE221140D1D9FCE672 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
