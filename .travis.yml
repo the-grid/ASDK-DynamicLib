@@ -5,9 +5,9 @@ git:
 before_install:
   - brew update
   - brew outdated xctool || brew upgrade xctool
-  - brew outdated carthage || brew upgrade carthage
   - gem install xcpretty
   - gem install xcpretty-travis-formatter
+  - gem install cocoapods
   - xcrun simctl list
 install: ./script/bootstrap
 script: ./script/build | egrep "^(/.+:[0-9+:[0-9]+:.(error|warning):|fatal|===)"
